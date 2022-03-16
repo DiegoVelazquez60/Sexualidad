@@ -13,9 +13,6 @@ body{
     justify-content: center;
 }
 
-.no{
-   visibility:visible; 
-}
 
 .main-container{
     visibility:hidden;
