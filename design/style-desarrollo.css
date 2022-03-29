@@ -1,0 +1,212 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(../images/atencion.jpg);
+    background-size: 10vw;
+}
+  
+.main-container{
+    visibility:hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.no{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    text-decoration:underline rgb(0, 0, 0);
+    font-size: 7vmax;
+    width: 100vw;
+}
+
+.no p{
+    height: 100%;
+    color: black;
+    background-color: rgb(255, 208, 0);
+}
+
+@media screen and (min-aspect-ratio: 1500/1222){
+    .main-container{
+        visibility: visible;
+    }
+    
+    .no{
+   visibility:hidden; 
+   font-size: 0.1vmin;
+    }
+
+    body {
+        background-image: url('../images/desarrollo.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+        display: grid;
+        justify-content: center;
+        overflow-x: hidden;
+        margin: 0;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+  
+  .navbar {
+    overflow: hidden;
+    background-color: hsl(24, 75%, 52%);
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    animation:down 2s;
+    position: relative;
+    width: 100vw;
+  }
+
+  @keyframes down{
+    0%   {opacity: 0%; top:-15vw;}
+    100% {opacity:100%;  top:0;}
+  }
+
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #aa5404;
+    color: white;
+    
+  }
+
+  main{
+      margin: 5% 10% 0 10%;
+      display: grid;
+      grid-template-columns: 1fr;
+      
+  }
+
+  main div.cont{
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: #fff;
+      border: solid hsl(24, 75%, 52%) .3vmax ;
+      border-radius: 2vw;
+
+      margin-bottom: 4%;
+    
+  }
+
+  main div.nino img{
+      width: 40%;
+      border-radius: 1.6vw 0 0 1.6vw;
+      border-right: solid hsl(24, 75%, 52%) .3vmax;
+  }
+
+  main div.nino div{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 2%;
+      align-items: center;
+  }
+
+  main div.nino div h1{
+      font-weight: 700;
+      font-size: 4vmax;
+      color:hsl(24, 75%, 52%);
+  }
+
+  main div.nino div h2{
+    font-weight: 500;
+    font-size: 3vmax;
+    color:hsl(0, 0%, 20%);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(255, 208, 0);
+    display: flex;
+    justify-content: center;
+    border-top: solid black;
+    position: relative;
+}
+
+footer p{
+    font-size: 1vw;
+}
+
+.z,.b,.d,.f{
+    animation: lef;
+    position: relative;
+}
+
+.a,.c,.e{
+    animation: rig;
+    position: relative;
+}
+
+.z{
+    animation-duration: 3s;
+}
+
+.a{
+    animation-duration: 4s;
+}
+
+.b{
+    animation-duration: 5s;
+}
+
+.c{
+    animation-duration: 6s;
+}
+
+.d{
+    animation-duration: 7s;
+}
+
+.e{
+    animation-duration: 8s;
+}
+
+.f{
+    animation-duration: 9s;
+}
+
+@keyframes lef{
+    0%   {opacity: 0%; left:30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+  @keyframes rig{
+    0%   {opacity: 0%; left:-30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+  
