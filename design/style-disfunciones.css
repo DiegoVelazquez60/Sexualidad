@@ -1,0 +1,416 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(../images/atencion.jpg);
+    background-size: 10vw;
+}
+  
+.main-container{
+    visibility:hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.no{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    text-decoration:underline rgb(0, 0, 0);
+    font-size: 7vmax;
+    width: 100vw;
+}
+
+.no p{
+    height: 100%;
+    color: black;
+    background-color: rgb(255, 208, 0);
+}
+
+@media screen and (min-aspect-ratio: 1500/1222){
+    .main-container{
+        visibility: visible;
+    }
+    
+    .no{
+   visibility:hidden; 
+   grid-row: 2;
+   font-size: 0.1vmin;
+    }
+
+    body {
+        background-image: url('../images/sex0.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vw 80vh;
+        display: grid;
+        justify-content: center;
+        overflow-x: hidden;
+        margin: 0;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+  
+  .navbar {
+    overflow: hidden;
+    background-color: hsl(290, 75%, 52%);
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    animation:down 2s;
+    position: relative;
+    width: 100vw;
+  }
+
+  @keyframes down{
+    0%   {opacity: 0%; top:-15vw;}
+    100% {opacity:100%;  top:0;}
+  }
+
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #aa04a7;
+    color: white;
+    
+  }
+  
+  
+
+.titulo{
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    animation-name: izq;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.titulo h1{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 9.5vmax;
+    text-align: center;
+    color: hsl(290, 75%, 52%);
+    text-shadow: .5vmin .5vmin #ffffff;
+    
+}
+
+@keyframes izq{
+    0%   {opacity: 0%; left:-30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+
+
+.section{
+    width: 100vw;
+}
+
+.section1{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    border-top: double hsl(290, 75%, 52%);
+    border-bottom: double hsl(290, 75%, 52%);
+    
+}
+
+.section1 div{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+.section1 div div{
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 7fr;
+    animation-name: up;
+    animation-duration: 5s;
+    position: relative;
+    
+}
+
+.section1 div h2{
+    border-right: solid .5vmin hsl(290, 75%, 52%);
+    font-weight: 700;
+    color: hsl(290, 75%, 52%);
+    font-size: 3vmax;
+    animation-name: up;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.section1 div div p{
+    font-size: 1.2vmax;
+}
+
+
+  @keyframes up{
+    0%   {opacity: 0%; top:30vw;}
+    100% {opacity:100%;  top:0;}
+  }
+
+.section2{
+    background-image: url('../images/png1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr !important;
+    padding: 3% 0;
+    
+  }
+
+
+  .section2 div{
+      height: 100% !important;
+      grid-row: 2;
+      grid-column: 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 12fr 1fr 100fr;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+  }
+
+  .section2 div h3{
+      color: #ffffff;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 5vmin;
+      animation-name: videotitle;
+      position: relative;
+      animation-duration: 3s;
+      position: relative;
+      font-size: 100% 100%;
+  }
+
+  iframe{
+      grid-row: 3;
+      width: 80%;
+      height: 80%;
+      animation-name: video;
+      position: relative;
+      animation-duration: 3s;
+  }
+
+  @keyframes video{
+    0%   {opacity: 0%; left:-30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+
+  
+  @keyframes videotitle{
+    0%   {opacity: 0%; left:30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+
+  .section3{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 30fr 1fr;
+    border-top: double hsl(290, 75%, 52%);
+    border-bottom: double hsl(290, 75%, 52%);
+
+  }
+
+.section3 div{
+      grid-column:2;
+      grid-row:2;
+    
+  }
+
+.section3 div h2{
+    font-weight: 700;
+    color: hsl(290, 75%, 52%);
+    font-size: 2.5vmax;
+    padding: 1vh;
+    animation-name: izq;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.section3 div ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2vmin;
+    list-style:inside;
+    padding: 2%;
+    animation-name: der;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes der{
+    0%   {opacity: 0%; left:30vw;}
+    100% {opacity:100%;  left:0;}
+  }
+
+.section3 div ul li label{
+    font-weight: 700;
+}
+
+.section3 div div.image{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 2% 0;
+    animation-name: izq;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.section3 div div.image img{
+    width: 40%;
+    border-radius: 2rem;
+}
+
+.section4{
+    background-image: url('../images/cie.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr !important;
+    align-items: center;
+    padding: 0;
+  }
+
+.section4 div{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.section4 div h3{
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.6vmax;
+    text-align: justify;
+    color: #ffffff;
+    text-shadow: .2vmin .2vmin black;
+}
+
+.section4 div div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 div div img{
+    width: 20%;
+    padding: 3% 0;
+    border-radius: 5vmax;
+}
+
+.section5{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-top: double hsl(290, 75%, 52%);
+    border-bottom: double hsl(290, 75%, 52%);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.section5 h2{
+    font-size: 2.5vmax;
+    font-family: 'Patrick Hand', cursive;
+    margin: 1% 3%;
+    animation-name: izq;
+    animation-duration: 3s;
+    position: relative;
+}
+
+audio{
+    animation-name: izq;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.section6 h3, .section6 li{
+    font-weight: 700;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.3vmax;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: .2vmin .2vmin black;
+    list-style: none;
+    animation-name: der;
+    animation-duration: 3s;
+    position: relative;
+}
+
+.section6{
+    padding: 3% 0;
+    background-image: url('../images/psico.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(255, 208, 0);
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  footer p{
+    font-size: 1vw;
+  }
