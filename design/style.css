@@ -1,0 +1,310 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+
+body{
+    background-color:hsl(225, 100%, 96%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+
+.main-container{
+    visibility:hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.no{
+    grid-row: 1;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    text-decoration:underline;
+    font-size: 7vmax;
+}
+
+.no p{
+    height: 100%;
+}
+
+@media screen and (min-aspect-ratio: 1/1){
+    .main-container{
+        visibility: visible;
+    }
+    
+    .no{
+   visibility:hidden; 
+   grid-row: 2;
+   font-size: 0.1vmin;
+    }
+}
+
+div.container{
+    background-color: #fff;
+    border-radius: 2em;
+    border: solid;
+    border-width: 0.15em;
+    border-color: #fff;
+    box-shadow: 1em 2em 3em rgba(21, 0, 143, 0.349);
+    width: 50vw;
+    height: 150max;
+    margin: 0 5vh 0 5vh;
+    position: relative;
+    animation-name: div;
+    animation-duration: 4s;
+}
+
+@keyframes div {
+    0%   {opacity: 0%; left:-30vw; top:0;}
+    100% {opacity:100%; left:0px; top:0px;}
+  }
+
+div.container-inside{
+    background-image: url(https://wallpapercave.com/wp/wp8818088.jpg);
+    background-size: 100% 100%;
+    width: 50vw;
+    height: 40%;
+    border-radius: 2em 2em 0 0;
+}
+
+img.image {
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+    filter: contrast(1.75);
+    border-radius: 2em 2em 0 0;
+}
+div.container-inside-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+div.container-inside-2 h1{
+    font-weight: 700;
+    font-size: 3.1vmax;
+}
+
+h1{
+    text-shadow: .5vmax .5vmax #bb9255;
+}
+
+div.container-inside-2 div{
+    text-align: center;
+}
+
+div.container-inside-2 div h2{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.3vmax;
+}
+div.container-inside-2 div h3{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5vmax;
+}
+
+div.container-inside-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    width: 80%;
+    border-radius: 2em;
+    margin-bottom: 5%;
+}
+
+div.container-inside-3 div{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+}
+
+.controller{
+    width: 100%;
+}
+
+.game-message{
+    font-weight: 700;
+    font-size: 1.5vmax;
+}
+
+div.container-inside-4{
+    margin: 2vmax;
+    display: flex;
+    justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+}
+
+div.container-inside-4 a{
+    margin: 1vmax;
+    font-size: 1.5vmax;
+    text-decoration: none;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 1em;
+    box-shadow: 1vmax 1vmax 1vmin rgba(21, 0, 143, 0.349);
+}
+
+div.container-inside-4 a:hover{
+    background-color: hsl(225, 67%, 80%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+div.container-inside-4 a:focus{
+    text-shadow: 0px 0px .5vmax #ffffff;
+    box-shadow: .8vmax .8vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.buttons1,.buttons2{
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+   padding: 5vh;
+
+}
+
+.buttons1 a,.buttons2 a{
+    margin: 1vmax;
+    font-size: 1vmax;
+    text-decoration: none;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 1em;
+    box-shadow: 1vmin 1vmin 1vmin rgba(21, 0, 143, 0.349);
+}
+
+.buttons1{
+    position: relative;
+    animation-name: button1;
+    animation-duration: 4s;
+}
+
+.buttons2{
+    position: relative;
+    animation-name: button2;
+    animation-duration: 4s;
+}
+
+@keyframes button1 {
+    0%   {opacity: 0%; bottom:20vh;}
+    100% {opacity:100%; bottom:0vh;}
+  }
+
+@keyframes button2{
+    0%   {opacity: 0%; top:40vh;}
+    100% {opacity:100%;  top:0px;}
+  }
+
+.b-1{
+    background-color: hsl(0, 75%, 52%);
+}
+
+.b-2{
+    background-color: hsl(24, 75%, 52%);
+}
+
+.b-3{
+    background-color: hsl(54, 75%, 52%);
+}
+
+.b-4{
+    background-color: hsl(130, 75%, 52%);
+}
+
+.b-5{
+    background-color: hsl(189, 75%, 52%);
+}
+
+.b-6{
+    background-color: hsl(0, 0%, 21%);
+}
+
+.b-7{
+    background-color: hsl(290, 75%, 52%);
+}
+
+.b-8{
+    background-color: hsl(245, 75%, 52%);
+}
+
+.b-1:hover{
+    background-color: hsl(0, 66%, 59%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-2:hover{
+    background-color: hsl(24, 57%, 58%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-3:hover{
+    background-color: hsl(54, 69%, 33%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-4:hover{
+    background-color: hsl(130, 55%, 38%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-5:hover{
+    background-color: hsl(189, 40%, 41%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-6:hover{
+    background-color: hsl(0, 0%, 61%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-7:hover{
+    background-color: hsl(290, 42%, 44%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-8:hover{
+    background-color: hsl(253, 50%, 53%);
+    box-shadow: 1vmax 1vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
+.b-1:focus,.b-2:focus,.b-3:focus,.b-4:focus,.b-5:focus,.b-6:focus,.b-7:focus,.b-8:focus{
+    text-shadow: 0px 0px .5vmax #ffffff;
+    box-shadow: .8vmax .8vmax 0.5vmin rgba(21, 0, 143, 0.534);
+}
+
